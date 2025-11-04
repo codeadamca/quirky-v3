@@ -1,17 +1,6 @@
-/* 
-    How to use firebase:
-    1. Connect to firebase. (api keys) X
-    2. CRUD
-        - Create X
-        - Read 
-        - Update
-        - Delete
-    3. Display data.
-*/
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
-import { getDatabase, ref, onValue, push, set, get, child } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
+import { getDatabase, ref, onValue, get, child } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -30,48 +19,10 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-
-// Selects the form element and the result element
-const form = document.getElementById('form');
-const results = document.getElementById('results');
-
 // Initialize Realtime Database and get a reference to the service
 const database = getDatabase(app);
 
-// Created directory object and add it to firebase
-function addData(name, url, author, github) {
-    const directory = {
-        name: name.value,
-        url: url.value,
-        author: author.value,
-        github_link: github.value
-    }
-    // Get site directory
-    const postListRef = ref(database, 'sites');
-    // Get id key of new directory
-    const newPostRef = push(postListRef);
-    // Update database with new directory
-    set(newPostRef, directory);
-};
-
-// Create Element
-function createElement(db) {
-    const element = document.createElement('p');
-    element.innerText = `name: ${db.name} url: ${db.url} github: ${db.github_link}`
-    results.append(element)
-}
-
-// retrieves data from firebase
-function showData() {
-    const reference = ref(database, '/sites');
-    onValue(reference, function(snapshot) {
-        snapshot.forEach(childSnapshot => {
-            createElement(childSnapshot.val())
-        })
-    })
-}
-
-
+// Add a directory link randomly chosen
 const showRandomDirectory = () => {
     const reference = ref(database, '/sites');
     onValue(reference, function(snapshot) {
@@ -91,27 +42,13 @@ const showRandomDirectory = () => {
        
     })
 }
-
+// Run only when there's random directory button
 if(document.getElementById('randomDirectory')) {
     // Show users on screen
     window.onload = showRandomDirectory;
 }
 
-if(document.getElementById('form')) {
-    // Store form data into firebase database
-    form.onsubmit = function() {
-        
-        const siteName = document.getElementById('siteName');
-        const siteUrl = document.getElementById('siteUrl');
-        const siteAuthor = document.getElementById('siteAuthor');
-        const githubUrl = document.getElementById('githubUrl');
-        
-        addData(siteName, siteUrl, siteAuthor, githubUrl);
-
-        return false;
-    }
-}
-
+// List all directory info
 if(document.getElementById('webpageList')) {
     const webpageList = document.getElementById('webpageList');
 
@@ -121,6 +58,7 @@ if(document.getElementById('webpageList')) {
         snapshot.forEach((childSnapshot) => {
             const webpage = childSnapshot.val();
             const li = document.createElement('ul');
+
             li.innerHTML = `<div class="directory-list">
             <h3>${webpage.name}</h3>
             <img src="data:image/png;base64,${webpage.image}">

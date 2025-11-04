@@ -123,6 +123,7 @@ if(document.getElementById('webpageList')) {
             const li = document.createElement('li');
             li.innerHTML = `<div class="directory-list">
             <h3>${webpage.name}</h3>
+            <img src="${webpage.image}">
             <p>${webpage.author}</p>
             <p>
                 <a href="${webpage.url}">Visit Website</a>

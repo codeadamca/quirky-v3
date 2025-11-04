@@ -17,15 +17,15 @@ import { getDatabase, ref, onValue, push, set, get, child } from "https://www.gs
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// const firebaseConfig = {
-//     apiKey: "",
-//     authDomain: "",
-//     databaseURL: "",
-//     projectId: "",
-//     storageBucket: "",
-//     messagingSenderId: "",
-//     appId: ""
-// };
+const firebaseConfig = {
+  apiKey: "AIzaSyDClQ0KhhVzRmneZw45j0F35n-7L354BrA",
+  authDomain: "brickmmo-f41ae.firebaseapp.com",
+  databaseURL: "https://brickmmo-f41ae-default-rtdb.firebaseio.com",
+  projectId: "brickmmo-f41ae",
+  storageBucket: "brickmmo-f41ae.firebasestorage.app",
+  messagingSenderId: "511312519816",
+  appId: "1:511312519816:web:b11956d0248e0b5f04f53d"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -120,10 +120,10 @@ if(document.getElementById('webpageList')) {
         webpageList.innerHTML = "";
         snapshot.forEach((childSnapshot) => {
             const webpage = childSnapshot.val();
-            const li = document.createElement('li');
+            const li = document.createElement('ul');
             li.innerHTML = `<div class="directory-list">
             <h3>${webpage.name}</h3>
-            <img src="${webpage.image}">
+            <img src="data:image/png;base64,${webpage.image}">
             <p>${webpage.author}</p>
             <p>
                 <a href="${webpage.url}">Visit Website</a>

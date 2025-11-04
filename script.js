@@ -56,10 +56,12 @@ if(document.getElementById('webpageList')) {
     onValue(reference, (snapshot) => {
         webpageList.innerHTML = "";
         snapshot.forEach((childSnapshot) => {
-            const webpage = childSnapshot.val();    
-            const li = document.createElement('li');
+            const webpage = childSnapshot.val();
+            const li = document.createElement('ul');
+
             li.innerHTML = `<div class="directory-list">
             <h3>${webpage.name}</h3>
+            <img src="data:image/png;base64,${webpage.image}">
             <p>${webpage.author}</p>
             <p>
                 <a href="${webpage.url}">Visit Website</a>

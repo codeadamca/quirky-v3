@@ -1,0 +1,46 @@
+{
+  "sites": {
+    "-OaMG8GJAs30a8QVR-2V": {
+      "author": "chenxi lin",
+      "github_link": "www.example.github.com",
+      "name": "Chenxi Lin",
+      "url": "https://chenxi96.github.io/Basketball-Drill-Assistant/"
+    },
+    "-OaMGX98YmVS0K5T_mZM": {
+      "author": "chenxi lin",
+      "github_link": "www.example.github1.com",
+      "name": "Chenxi Lin",
+      "url": "https://chenxi96.github.io/Product-List-With-Cart/"
+    },
+    "-OaMGb12YnVS0K9T_pZR": {
+      "author": "chenxi lin",
+      "github_link": "https://github.com/chenxi96/optical-toys",
+      "name": "Optical Toys",
+      "url": "https://optical.toys/"
+    },
+    "-OaMGc13YnVS0K9T_pZS": {
+      "author": "chenxi lin",
+      "github_link": "https://github.com/chenxi96/sliding-toys",
+      "name": "Mystic Square - 8 Puzzle",
+      "url": "https://sliding.toys/mystic-square/8-puzzle/daily/"
+    },
+    "-OaMGd14YnVS0K9T_pZT": {
+      "author": "chenxi lin",
+      "github_link": "https://github.com/chenxi96/weird-or-confusing",
+      "name": "Weird or Confusing",
+      "url": "https://weirdorconfusing.com/"
+    },
+    "-OaMGe15YnVS0K9T_pZU": {
+      "author": "samson mathews",
+      "github_link": "https://github.com/samsonmmathews/Football-Penalty-Simulator",
+      "name": "Football Penalty Simulator",
+      "url": "https://samsonmmathews.github.io/Football-Penalty-Simulator/"
+    },
+    "-OaMGf16YnVS0K9T_pZV": {
+      "author": "samson mathews",
+      "github_link": "https://github.com/samsonmmathews/Movie-Picker",
+      "name": "Movie Picker",
+      "url": "https://samsonmmathews.github.io/Movie-Picker/"
+    }
+  }
+}

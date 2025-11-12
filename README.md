@@ -1,8 +1,19 @@
 # Quirky Directory V3
 
-To Do:
-- [ ] Add Header
-- [ ] Add Home Page
-    - [ ] Add Random Directory Button
-    - [ ] Add List All Directory Button
-- [ ] Add Random Random Directory function
+## Created Function to Randomize Directory and List of Directory
+
+## Firebase Database Design
+```
+sites/
+    firebase-timestamp/
+        author: "John Doe",
+        github-link: "www.example.github.com",
+        name: "example",
+        url: "www.example.com"
+    firebase-timestamp/
+        author: "",
+        github-link: "",
+        name: "",
+        url: ""
+```
+![Database Design](Database_Design.png)

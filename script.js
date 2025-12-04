@@ -92,7 +92,7 @@ if(pageList) {
                     <a href="${webpage.url}" target="_blank">
                         <img src="screenshots/${webpage.image}" style="width:100%;max-width:200px;">
                     </a>
-                    <p>${webpage.author}</p>
+                    <!--<p>${webpage.author}</p>-->
                     <p>
                         <a href="${webpage.url}" target="_blank">Visit Website</a><br>
                         <a href="${webpage.github_link}" target="_blank">GitHub repo</a>

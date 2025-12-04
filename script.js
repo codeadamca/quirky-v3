@@ -90,7 +90,8 @@ if(pageList) {
                 <div class="w3-card w3-padding w3-center w3-margin-top">
                     <h3>${webpage.name}</h3>
                     <a href="${webpage.url}" target="_blank">
-                        <img src="screenshots/${webpage.image}" style="width:100%;max-width:200px;">
+                        <img src="screenshots/${webpage.image}" 
+                            style="width:100%;max-width:200px; border: 5px solid black;">
                     </a>
                     <!--<p>${webpage.author}</p>-->
                     <p>

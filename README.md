@@ -9,6 +9,16 @@ A web directory storing quirky websites created by [https://mediaarts.humber.ca/
 
 ![Database Design](_readme/database-design.png)
 
+## Author
+
+This project was created by by the following students:
+
+Author: Chenxi  
+GitHub: https://github.com/chenxi96  
+
+Author: Samson  
+GitHub: https://github.com/samsonmmathews  
+
 ---
 
 ## Project Stack

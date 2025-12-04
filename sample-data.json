@@ -1,46 +1,32 @@
 {
   "sites": {
     "-OaMG8GJAs30a8QVR-2V": {
-      "author": "chenxi lin",
-      "github_link": "www.example.github.com",
-      "name": "Chenxi Lin",
-      "url": "https://chenxi96.github.io/Basketball-Drill-Assistant/"
+      "author": "Jinal Patel",
+      "github_link": "https://github.com/codeadamca/forked-quirky-dj-keyboard/",
+      "name": "DJ Keyboard",
+      "url": "https://codeadamca.github.io/forked-quirky-dj-keyboard/",
+      "image": "dj-keyboard.png"
     },
     "-OaMGX98YmVS0K5T_mZM": {
-      "author": "chenxi lin",
-      "github_link": "www.example.github1.com",
-      "name": "Chenxi Lin",
-      "url": "https://chenxi96.github.io/Product-List-With-Cart/"
+      "author": "Digna Patel",
+      "github_link": "https://github.com/codeadamca/forked-quirky-popcorn",
+      "name": "Popcorn Poppers",
+      "url": "https://codeadamca.github.io/forked-quirky-popcorn/",
+      "image": "popcorn-poppers.png"
     },
     "-OaMGb12YnVS0K9T_pZR": {
-      "author": "chenxi lin",
-      "github_link": "https://github.com/chenxi96/optical-toys",
-      "name": "Optical Toys",
-      "url": "https://optical.toys/"
+      "author": "Kadelle",
+      "github_link": "https://github.com/codeadamca/forked-quirky-doh/",
+      "name": "Doh Major",
+      "url": "https://codeadamca.github.io/forked-quirky-doh/",
+      "image": "doh-major.png"
     },
     "-OaMGc13YnVS0K9T_pZS": {
-      "author": "chenxi lin",
-      "github_link": "https://github.com/chenxi96/sliding-toys",
-      "name": "Mystic Square - 8 Puzzle",
-      "url": "https://sliding.toys/mystic-square/8-puzzle/daily/"
-    },
-    "-OaMGd14YnVS0K9T_pZT": {
-      "author": "chenxi lin",
-      "github_link": "https://github.com/chenxi96/weird-or-confusing",
-      "name": "Weird or Confusing",
-      "url": "https://weirdorconfusing.com/"
-    },
-    "-OaMGe15YnVS0K9T_pZU": {
-      "author": "samson mathews",
-      "github_link": "https://github.com/samsonmmathews/Football-Penalty-Simulator",
-      "name": "Football Penalty Simulator",
-      "url": "https://samsonmmathews.github.io/Football-Penalty-Simulator/"
-    },
-    "-OaMGf16YnVS0K9T_pZV": {
-      "author": "samson mathews",
-      "github_link": "https://github.com/samsonmmathews/Movie-Picker",
-      "name": "Movie Picker",
-      "url": "https://samsonmmathews.github.io/Movie-Picker/"
+      "author": "Adam Thomas",
+      "github_link": "https://github.com/codeadamca/api-smurfs",
+      "name": "Smurf Insults",
+      "url": "https://pages.codeadam.ca/smurfs/",
+      "image": "smurf-insults.png"
     }
   }
 }

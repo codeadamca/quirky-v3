@@ -1,90 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
-
-#form {
-    margin: 1.25em auto;
-    padding: 1.25em;
-    background-color: antiquewhite;
-    border-radius: 1em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-}
-
-label {
-    display: block;
-    margin: bottom;
-    color: #333;
-}
-
-body {
-    font-family: "Share Tech";
-    padding-top: 10%;
-}
-
-h1 {
-    font-size: 128px;
-    text-align: center;
-}
-
-#listHeading {
-    font-size: 48px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    width: 312px;
-    height: 121px;
-    font-size: 32px;
-    background-color: #082032;
-    color: #FFFFFF;
-}
-
-.button:hover {
-    background-color: #224D6E;
-}
-
-.link-container {
-    display: flex;
-    justify-content: center;
-    column-gap: 177px;
-}
-
-#year {
-    font-size: 36px;
-}
-
-#webpageList {
-    font-size: 24px;
-}
-
-#webPageContainer {
-    padding-left: 5%;
-}
-
-img {
-    width: 500px;
-}
-
-ul {
-    border-style: solid;
-    border-radius: 10px;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-h2 {
-    font-size: 64px;
-    text-align: center;
-}
+      #codeadam {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        font-size: 24px;
+        padding: 15px;
+        z-index: 10000;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #codeadam img {
+        vertical-align: middle;
+      }

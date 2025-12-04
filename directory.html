@@ -14,20 +14,39 @@
     <title>Directory | Quirky Directory</title>
 
     <script type="module" src="./script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script
+        src="https://kit.fontawesome.com/57a8a8c892.js" 
+        crossorigin="anonymous"></script>
 
 </head>
-<body class="w3-center" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+<body class="w3-center">
 
-    <div style="padding: 10%;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 40px 16px;">
 
-        <img src="images/quirky-web.png" width="300">
+        <a href="/">
+            <img src="images/quirky-web.png" width="200">
+        </a>
 
         <br><br>
     
         <div id="page-list-container">
-            <div id="page-list"></div>
+            <div id="page-list" class="w3-row-padding"></div>
         </div>
 
+    </div>
+
+    <div id="codeadam">
+      <a href="https://pages.codeadam.ca"><i class="fas fa-bars"></i></a>
+      &nbsp;
+      <a href="https://github.com/codeadamca/quirky-v3"
+        ><i class="fab fa-github"></i
+      ></a>
+      &nbsp;
+      <a href="https://codeadam.ca"
+        ><img src="https://codeadam.ca/images/code-block.png" width="30"
+      /></a>
     </div>
 
 </body>

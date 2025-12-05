@@ -1,12 +1,19 @@
-      #codeadam {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        font-size: 24px;
-        padding: 15px;
-        z-index: 10000;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      #codeadam img {
-        vertical-align: middle;
-      }
+#codeadam {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 24px;
+    padding: 15px;
+    z-index: 10000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#codeadam img {
+    vertical-align: middle;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}

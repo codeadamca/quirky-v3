@@ -95,8 +95,15 @@ if(pageList) {
                     </a>
                     <!--<p>${webpage.author}</p>-->
                     <p>
-                        <a href="${webpage.url}" target="_blank">Visit Website</a><br>
-                        <a href="${webpage.github_link}" target="_blank">GitHub repo</a>
+                        <a href="${webpage.url}" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Website
+                        </a>
+                        <br>
+                        <a href="${webpage.github_link}" target="_blank">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
                     </p>
                 </div>`;
             pageList.appendChild(col);

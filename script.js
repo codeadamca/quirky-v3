@@ -85,26 +85,28 @@ if(pageList) {
         snapshot.forEach((childSnapshot) => {
             const webpage = childSnapshot.val();
             const col = document.createElement('div');
-            col.className = "w3-quarter w3-container w3-margin-top";
+            col.className = "w3-quarter w3-container w3-margin-top w3-margin-bottom";
             col.innerHTML = `
-                <div class="w3-card w3-padding w3-center w3-margin-top">
-                    <h3>${webpage.name}</h3>
-                    <a href="${webpage.url}" target="_blank">
-                        <img src="screenshots/${webpage.image}" 
-                            style="width:100%;max-width:200px; border: 5px solid black;">
-                    </a>
+                <div class="w3-card w3-center w3-margin-top w3-margin-bottom">
+                    <header class="w3-padding w3-black w3-padding-0">${webpage.name}</header>
+                    <div style="flex: 1; display: flex; flex-direction: column;">
+                        <a href="${webpage.url}" target="_blank">
+                            <img src="screenshots/${webpage.image}" 
+                                style="width:100%;m">
+                        </a>
+                    </div>
                     <!--<p>${webpage.author}</p>-->
-                    <p>
+                    <div class="w3-padding-large">
                         <a href="${webpage.url}" target="_blank">
                             <i class="fas fa-external-link-alt"></i>
                             Website
                         </a>
-                        <br>
+                        |
                         <a href="${webpage.github_link}" target="_blank">
                             <i class="fab fa-github"></i>
                             GitHub
                         </a>
-                    </p>
+                    </div>
                 </div>`;
             pageList.appendChild(col);
         });
